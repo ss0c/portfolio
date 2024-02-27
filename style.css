@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', Arial;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-nav{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 8px;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s
+}
+
+.main-nav a:hover{
+    transform: scale(1.2);
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:130px;
+    padding-left: 80px;
+}
+
+.main-header h1{
+    font-weight: 600;
+    font-size: 48px;
+}
+
+
+.main-header h2{
+    font-weight: 600;
+    font-size: 13px;
+    color: #777;
+}
+
+.main-header span{
+    color : #09f;
+}
+
+.main-container{
+    margin-top:230px;
+    border-top: 1px solid #ccc;
+}
+
+.avatar-image{
+    animation: floating 1s linear infinite;
+}
+
+
+.about-me h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 16px 0 16px
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    width:610px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+
+.about-me p {
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.main-projects{
+    border-top: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left:80px;
+    margin-right: 80px;
+    gap: 12px;
+
+}
+
+.main-projects h2{
+
+    grid-column: 1/4;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 16px 0 16px
+}
+
+.card-project{
+    height: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.card-img{
+    max-height: 290px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+}
+
+.card-description{
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 16px
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card-links a{
+    text-decoration: none;
+}
+
+.card-links a img{
+    max-height: 25px;
+}
+
+
+@keyframes floating{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
