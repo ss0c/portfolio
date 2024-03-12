@@ -11,6 +11,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.nav-bar {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.966);
+  box-shadow: 0 1px 1px 1px rgb(230, 230, 230);
+}
+
 .main-nav {
   display: flex;
   justify-content: space-around;
@@ -26,13 +33,6 @@ html {
 
 .main-nav a:hover {
   transform: scale(1.2);
-}
-
-.nav-bar {
-  position: sticky;
-  top: 0px;
-  background-color: rgba(255, 255, 255, 0.966);
-  box-shadow: 0 1px 1px 1px rgb(230, 230, 230);
 }
 
 .main-header {
